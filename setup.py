@@ -4,7 +4,7 @@ from distutils.core import setup, Extension
 
 __base__ = {
     'name':'midi', 
-    'version':'0.2.2',
+    'version':'v0.2.3',
     'description':'Python MIDI API',
     'author':'giles hall',
     'author_email':'ghall@csh.rit.edu',
@@ -41,5 +41,7 @@ def configure_platform():
         print "No sequencer available for '%s' platform." % platform
     return ns
 
-setup(**configure_platform())
+if __name__ == "__main__":
+    setup(**configure_platform())
+
 
