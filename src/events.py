@@ -1,4 +1,3 @@
-import pdb
 class EventRegistry(object):
     Events = {}
     MetaEvents = {}
